@@ -1,0 +1,249 @@
+맥 VSC 단축키 zuyo.tistory.com/902
+
+웹문서 == html문서(내용) + css문서(스타일) + javascript문서(동적표현)
+html? == 언어
+hyper
+text
+markup
+language
+(마크업언어 : 컨텐츠의 의미, 역활을 표시)
+<>내용</> 로 표시
+h1 : 제목
+p : 문단, 설명
+a : 문서을 연결하는 역활 anchor 닷
+li : list(목록,메뉴)
+ul : li묶음 unorderd list
+div : division 영역 / 분할
+    상단전용div -> header
+    메뉴 네비게이션 전용 div -> nav
+
+html문서는 html언어로 쓰여진 문서, html언어로 컨텐츠의 의미, 역활을 표시한 문서
+
+css설명
+link : css파일을 html문서에 연결하는 태그
+
+브라우저기본스타
+
+젠코딩 예시 ) header>(h1>a)>nav>(ul>li*5>a)+ul>li*2>a
+sass로 선택자 배치로 10빠르게 하기
+
+태그는 블럭(block)태그와 인라인(inline)태그로 나뉜다.
+블럭(block)태그는 너비는 화면에 꽉찬다. 높이는 내용물 만큼 늘어난다.
+블럭(block)태그는 수직으로 쌓인다.
+header, div, h1~h6, ul, li, p
+
+인라인(inline)태그는 너비가 컨텐츠만큼만 넓어진다.
+수평으로 배치된다.
+너비 높이를 줘도 적용이 안된다.
+padding이 제대로 적용이 안된다.
+
+브라우저기본스타일을 초기화하기
+
+태그에 이름지정하여 특정이름을 가진 태그에만 스타일 지정하기
+    <태그 class="영어이름"> - html문서에서 태그에 이름지정
+    .영어이름 - css문서에 이름지정한 후 스타일 지정
+    Ex) <ul class="etcmenu">
+        .etcmenu{
+            
+        }
+class=""
+     ->   "gnb" : global navigation bar
+
+main 태그
+footer 태그 
+
+padding : 안쪽 여백, 면적이 커진다, 다른 요소와 붙어있는 상태이다
+:hover : 마우스를 올린 상태
+display:block; 인라인(inline)태그를 블럭(block)태그로 전환
+
+id 태그 이름지정 현재문서에서 한번만 사용가능
+    <div id="title"> : html에서
+    #title : css문서에서
+
+<br> : 줄바꿈 태그
+<span> : 인라인 요소를 묶어주는 태그(의미는 없음)
+
+1. 마크업{
+    header 상단영역 태그
+    h1 제목태그
+    a 링크태그
+    p 문단,설명
+    nav 메뉴묶음
+    ul li묶음
+    li 목록, 리스트
+    br 줄바꿈
+    span 인라인요소 묶음
+    div 영역
+    main 메인영역
+    footer 하단영역
+}
+2. css{
+    width 너비 지정
+    height 높이
+    margin: 0 auto 수평 중앙 정렬 (블럭태그한테만)
+    padding 안쪽 여백
+    display:flex 수평 정렬
+    justify-content 수평 정렬 옵션
+    flex-direction 수직 정렬
+    align-items 수직 정렬 옵션
+    font-size 글자 크기
+    font-weight 글자 두께
+    color 글자색
+    background-color 배경색
+    position: absolute 위치 지정
+    top, bottom, left, right 위치 지정 속성
+    position: relative 기준점
+    border 테두리선
+    box-sizing: border-box 테두리 보더에 포함 면적
+    line-height 글높이, 줄간격
+    text-align 텍스트 정렬 (인라인태그 중앙 정렬 text-align: center)
+    text-decoration:none 밑줄 없애기
+    list-style: none ul의 점표시 없애기
+    background-image
+    background-repeat
+    background-size
+    background-position
+    background-attachment
+    calc 계산기
+    font-family 웹폰트(구글폰트)
+    vertical-align 글자 수직 정렬
+    opacity 투명도 0~1
+    display: inline-block;    /* 인라인속성인 수평과 블럭속성인 너비지정이 가능하다 */
+}
+3. 배경이미지 지정하기
+    background-image:url(경로/이미지.jpg)
+
+가상선택자 ::before     ::after
+first-child 첫번째 자식
+선택자 분류외 설명 -> https://www.nextree.co.kr/
+div a{  div 아래있는 모든 a
+
+}
+div>a{div 바로아래 모든 a
+
+}
+
+position관련 z-index
+    z-index: 숫자;
+
+section태그 절,장 같은 부류의 정보를 묶음
+
+색상값
+    red...
+   ?16진법 #333333
+    ?reba(red,green,blue,alpha) alpha: 투명도(0~1까지)
+
+원형그라디언트, 선형그라디언트 css3studio.com
+    -webkit- 크롬, 사파리
+    -o- 오페라
+    -ms- 익스플로어
+    -moz- 파이어폭스
+
+브라우저 접두사 vendor prefix 
+    css3vendor prefix
+
+img태그는 중요 컨텐츠일때 이미지를 html문서내에 배치하여 표시한다
+    주요한 컨텐츠는 텍스트로 기재하는 것을 원칙으로 한다
+
+figure, figcaption
+
+position: relative의 특성 중 하나는 위치를 이동(top,left..)시켜도 인접해있는 요소가 흔들리지 않는다.
+position: relative된 요소의 원래위치영역이 보존되어 다른요소에 영향을 주지 않는다.
+
+address태그
+select태그
+
+transition 변이 처음상태와 바뀐상태의 값의 차이를 변화시킴(애니)
+    원래상태의 선택자에 transition지정
+    transition: 속성명 초s;
+    transform: translateY(수치값) : 다른 요소에는 영향을 미치지 않고(position: relative처럼) 형태변화 시킨다(위치, 크기, 회전 등)
+        >position: relativef를 사용하지 않아도 된다.
+        차이점은 position: relative는 위치변화만 가능(위, 아래, 좌우, 앞뒤(z-index))
+            z-index를 사용하려면 꼭 position속성을 사용해야 된다.
+            단순히 다른 요소에 영향을 주지 않고 위치나 크기나 회전등의 형태변환을 할때는 transform속성을 사용하는 것이 편하다.
+            transform: rotate(45deg) 각도조절(시계방향 45)
+
+strong태그
+
+breadcrumb
+
+ol태그 순서(순위)가 있는 태그는
+        oldered list
+
+웹 아이콘
+    구글아이콘
+
+svg
+    백터방식과 비트맵방식
+    
+vw > 화면크기를 기준으로 너비, 높이 지정
+    1vw(viewwidth) = 1100px > 1/100 > 11px - 1vw
+
+css의 animation속서
+
+제이쿼리 정리
+    1.제이쿼리 연결
+    2.제이쿼리 기본구문
+    3.제이쿼리 코딩순서
+        $().css();
+        $("").css();
+        $("li").css("","");
+        
+        this : 이벤트(hover, click, ready)가 발생한 경로 아래 의미
+        find();
+        wrap();
+        append();
+        remove();
+        mouseenter() 이벤트
+        mouseleaver() 이벤트
+        clic() 이벤트:클릭하면 실행
+        fadeIn(); 서서히 보이기
+        slideUp(); 접히기
+        slideDown(); 펼치기
+        console.log() 콘솔창에 표시
+        index(); 해당요소의 번호(0부터 시작)
+        parent(); (상위)부모요소
+        prepend();
+        wrap();
+        wrapAll();
+        attr(); 객체의 속성값을 가져오거나 속성값을 변경
+        clone(); 선택요소를 복사(copy)
+
+        h2~p : h2   h2(siblings)부터 나오는 p태그들
+
+        if(조건){
+            
+        }
+        hasClass(); 클래스를 갖고있는지를 검사
+        갖고 있으면 맞음 1
+        갖고 있지 않으면 0
+
+        문자와 숫자 연결시 "문자" + 숫자
+        문자와 객체(메서드) 연결시 "문자+객체(메서드)
+        객체와 숫자 연결시 "객체(메서드) + 숫자
+    
+    toggleClass()
+    
+    선택요소(장소).append(내용물); 앞의 선택요소안에 태그를 추가
+    선택요소(내용물).appendTo(장소); 앞의 선택요소를 태그로 이동시킴
+    
+&&: and 논리연산자
+
+offset() 문서의 상단을 기준으로 요소의 top위치와 left위치값을 가져옴
+        offset().top;
+        offset().left;
+
+position() 부모요소를 기준으로 위치 지정됨
+        position().top;
+        position().left;
+
+1. 가로 스크롤 없애기
+
+<body style="overflow-x: hidden"></body>
+
+
+2. 세로 스크롤 없애기
+
+<body style="overflow-y: hidden"></body>
+
+화면단위 스크롤 : https://2nusa.blogspot.com/2016/10/jquery-mouse-wheel.html

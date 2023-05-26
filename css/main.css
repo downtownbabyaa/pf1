@@ -1,0 +1,386 @@
+/* 메인 영역 */
+main {
+  height: 1100px;
+}
+main section#intro div {
+}
+main section#intro div h2 {
+  display: none;
+}
+main section#intro div ul {
+  justify-content: space-between;
+  display: flex;
+}
+main section#intro div ul li {
+  width: calc(100% / 4 - 60px / 4);
+  height: 260px;
+  /*! background-color: #ccc; */
+  /*! display: flex; */
+  /*! justify-content: center; */
+  /*! align-items: center; */
+  transition: all 0.5s;
+}
+main section#intro div ul li:hover{
+  box-shadow: 0px 0px 7px #666;
+}
+main section#intro div ul li a {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*! font-size: 0; */
+  position: relative;
+}
+main section#intro div ul li a h3{
+  transition: all 0.5s;
+  z-index: 3;
+}
+main section#intro div ul li a:hover h3{
+  transform: translateY(-65px);
+  color: white;
+}
+main section#intro div ul li a h3::before{
+  content: "";
+  width: 25px;
+  height: 2.8px;
+  display: block;
+  background-color: #333;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  top: 0;
+  transition: all 0.5s;
+  
+}
+
+main section#intro div ul li a:hover h3::before{
+  top: 52px;
+  background-color: #fff;
+}
+main section#intro div ul li a:hover{
+  
+}
+main section#intro div ul li:nth-child(1) a{
+  background: -webkit-gradient(circle, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #8da3b3), color-stop(1, #8da3b3));
+	background: -moz-radial-gradient(circle, #8da3b300 12%, #8da3b3 100%, #8da3b3 100%);
+	background: -webkit-radial-gradient-gradient(circle,  #8da3b300 12%, #8da3b3 100%, #8da3b3 100%);
+	background: -o-radial-gradient(circle,  #8da3b300 12%, #8da3b3 100%, #8da3b3 100%);
+	background: -ms-radial-gradient(circle,  #8da3b300 12%, #8da3b3 100%, #8da3b3 100%);
+	background: radial-gradient(circle, #8da3b300 12%, #8da3b3 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#8da3b3', gradientType=0);
+  transition: all 0.5s;
+}
+main section#intro div ul li:nth-child(1) a::after{
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: -webkit-gradient(circle, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #206ba4), color-stop(1, #206ba4));
+	background: -moz-radial-gradient(circle, #8da3b3ff 12%, #206ba4 100%, #206ba4 100%);
+	background: -webkit-radial-gradient-gradient(circle,  #8da3b3ff 12%, #206ba4 100%, #206ba4 100%);
+	background: -o-radial-gradient(circle,  #8da3b3ff 12%, #206ba4 100%, #206ba4 100%);
+	background: -ms-radial-gradient(circle,  #8da3b3ff 12%, #206ba4 100%, #206ba4 100%);
+	background: radial-gradient(circle, #8da3b3ff 0%, #206ba4 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#206ba4', gradientType=0);
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 1;
+}
+main section#intro div ul li:nth-child(2) a{
+  background: -webkit-gradient(circle, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #b2c9d1), color-stop(1, #b2c9d1));
+	background: -moz-radial-gradient(circle, ##b2c9d100 12%, #b2c9d1 100%, #b2c9d1 100%);
+	background: -webkit-radial-gradient-gradient(circle,  #b2c9d100 12%, #b2c9d1 100%, #b2c9d1 100%);
+	background: -o-radial-gradient(circle,  #b2c9d100 12%, #b2c9d1 100%, #b2c9d1 100%);
+	background: -ms-radial-gradient(circle,  #b2c9d100 12%, #b2c9d1 100%, #b2c9d1 100%);
+	background: radial-gradient(circle, #b2c9d100 12%, #98bac6 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#b2c9d1', gradientType=0);
+  transition: all 0.5s;
+}
+main section#intro div ul li:nth-child(2) a::after{
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: -webkit-gradient(circle, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #4c8da4), color-stop(1, #4c8da4));
+	background: -moz-radial-gradient(circle, ##b2c9d1 0%, #4c8da4 100%, #4c8da4 100%);
+	background: -webkit-radial-gradient-gradient(circle,  #b2c9d1 0%, #4c8da4 100%, #4c8da4 100%);
+	background: -o-radial-gradient(circle,  #b2c9d1 0%, #b2c9d1 100%, #4c8da4 100%);
+	background: -ms-radial-gradient(circle, #b2c9d1 0%, #4c8da4 100%, #4c8da4 100%);
+	background: radial-gradient(circle, #b2c9d1 0%, #4c8da4 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#4c8da4', gradientType=0);
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 1;
+}
+main section#intro div ul li:nth-child(3) a{
+  background: -webkit-gradient(circle, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #9c9cff), color-stop(1, #9c9cff));
+	background: -moz-radial-gradient(circle, #d1d1d300 12%, #9c9cff 100%, #9c9cff 100%);
+	background: -webkit-radial-gradient-gradient(circle,  #d1d1d300 12%, #9c9cff 100%, #d1d1d3 100%);
+	background: -o-radial-gradient(circle,  #d1d1d300 12%, #9c9cff 100%, #9c9cff 100%);
+	background: -ms-radial-gradient(circle,  #d1d1d300 12%, #9c9cff 100%, #9c9cff 100%);
+	background: radial-gradient(circle, #d1d1d300 12%, #9c9cff 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#9c9cff', gradientType=0);
+  transition: all 0.5s;
+}
+main section#intro div ul li:nth-child(3) a::after{
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: -webkit-gradient(circle, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #4d4dc1), color-stop(1, #4d4dc1));
+	background: -moz-radial-gradient(circle, #d1d1d3ff 0%, #4d4dc1 100%, #4d4dc1 100%);
+	background: -webkit-radial-gradient-gradient(circle,  #d1d1d3ff 0%, #4d4dc1 100%, #4d4dc1 100%);
+	background: -o-radial-gradient(circle,  #d1d1d3ff 0%, #4d4dc1 100%, #4d4dc1 100%);
+	background: -ms-radial-gradient(circle,  #d1d1d3ff 0%, #4d4dc1 100%, #4d4dc1 100%);
+	background: radial-gradient(circle, #d1d1d3ff 0%, #4d4dc1 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#4d4dc1', gradientType=0);
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 1;
+}
+main section#intro div ul li:nth-child(4) a{
+  background: -webkit-gradient(circle, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #c6c0a6), color-stop(1, #c6c0a6));
+	background: -moz-radial-gradient(circle, #c6c0a600 12%, #c6c0a6 100%, #c6c0a6 100%);
+	background: -webkit-radial-gradient-gradient(circle,  #c6c0a600 12%, #c6c0a6 100%, #c6c0a6 100%);
+	background: -o-radial-gradient(circle,  #c6c0a600 12%, #c6c0a6 100%, #c6c0a6 100%);
+	background: -ms-radial-gradient(circle,  #c6c0a600 12%, #c6c0a6 100%, #c6c0a6 100%);
+	background: radial-gradient(circle, #c6c0a600 12%, #c6c0a6 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#c6c0a6', gradientType=0);
+  transition: all 0.5s;
+}
+main section#intro div ul li:nth-child(4) a::after{
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: -webkit-gradient(circle, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #82743a), color-stop(1, #82743a));
+	background: -moz-radial-gradient(circle, #c6c0a6 12%, #82743a 100%, #82743a 100%);
+	background: -webkit-radial-gradient-gradient(circle,  #c6c0a6 12%, #82743a 100%, #bba64c 100%);
+	background: -o-radial-gradient(circle,  #c6c0a6 12%, #82743a 100%, #82743a 100%);
+	background: -ms-radial-gradient(circle,  #c6c0a6 12%, #82743a 100%, #82743a 100%);
+	background: radial-gradient(circle, #c6c0a6 12%, #82743a 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#82743a', gradientType=0);
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 1;
+}
+main section#intro div ul li a:hover::after{
+  opacity: 1;
+}
+main section#intro div ul li a::before{
+  content: "";
+  width: 100%;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+  background-image: url(../img/stream.svg);
+  position: relative;
+  top: 0;
+  z-index: 2;
+}
+main section#intro div ul li a:hover::before{
+  height: 50px;
+  top: -30px;
+}
+main section#intro div ul li:nth-child(2) a::before{
+  background-image: url(../img/cloud.svg);
+}
+main section#intro div ul li:nth-child(3) a::before{
+  background-image: url(../img/settings.svg);
+}
+main section#intro div ul li:nth-child(4) a::before{
+  background-image: url(../img/podcasts.svg);
+}
+main section#intro div ul li a p {
+  opacity: 0;
+  display: block;
+  line-height: 16px;
+  font-size: 13px;
+  margin-top: 20px;
+  transition: all 0.5s;
+  position: absolute;
+  bottom: 0;
+  z-index: 4;
+}
+main section#intro div ul li a:hover p{
+  opacity: 1;
+  bottom: 70px;
+  color: white;
+}
+#society {
+  position: relative;
+}
+#society div.wrap {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e6efee;
+  padding: 20px;
+  background-image: url(../img/main_roll_bg.jpg);
+  background-repeat: no-repeat;
+  /*! background-size: 46%; */
+  box-sizing: border-box;
+}
+#society div.wrap h2.h3 {
+}
+#society div.wrap>p.p {
+  position: absolute;
+  margin-top: 50px;
+  line-height: 20px;
+}
+#society div.wrap article {
+
+}
+.societyArticle{
+  width: 40%;
+}
+.societyArticle .btn{
+  position: absolute;
+  bottom: -25px;
+  left: 85%;
+  top: auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+.societyArticle .btn .btn_pause{
+  height: 20px;
+}
+.societyArticle .btn .slick-prev{
+  display: block !important;
+}
+.societyArticle .btn .slick-next{
+  display: block !important;
+}
+.societyArticle .slick-dots{
+  bottom: -25px !important;
+}
+/* #society div.wrap article:hover{
+  background-color: 
+#f000; 
+} */
+#society div.wrap article a {
+  box-sizing: border-box;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+  display: block;
+}
+#society div.wrap article a:hover{
+  border: 1px solid #333;
+}
+#society div.wrap article a figure{
+  height: 130px;
+  overflow: hidden;
+}
+#society div.wrap article a img {
+  width: 100%;
+  position: relative;
+  top: -20px;
+  transition: all 0.4s;
+  height: 150px;
+}
+#society div.wrap article a:hover img{
+  opacity: 0.5
+}
+#society div.wrap article a>p {
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  /*! width: 65%; */
+  line-height: 2;
+}
+#society div.wrap article a>date {
+}
+
+#news {
+
+}
+#news div.wrap {
+
+}
+#news div.wrap h2.h3 {
+
+  margin-bottom: 20px;
+}
+#news div.wrap ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+}
+#news div.wrap ul li:first-child {
+
+}
+#news div.wrap ul li{
+  width: calc(50% - 30px);
+}
+#news div.wrap ul li:nth-child(n+2){
+  width: 39%;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+#news div.wrap ul li:nth-child(n+2) a{
+  
+}
+
+#news div.wrap ul li:first-child a.block {
+  /*! display: flex; */
+}
+#news div.wrap ul li:first-child p{
+  margin-bottom: 100px;
+}
+#news div.wrap ul li:first-child a.block h3{
+  
+  margin-bottom: 10px;
+  font-size: 105%;
+  font-weight: bold;
+}
+#news div.wrap ul li:first-child a.block figure {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: calc(50% - 10px);
+  height: 100%;
+}
+#news div.wrap ul li:first-child p .block{
+  text-overflow: clip;
+  overflow: hidden;
+  height: 56px;
+  line-height: 19px;
+  color: #666;
+}
+#news div.wrap ul li:first-child a.block figure img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+

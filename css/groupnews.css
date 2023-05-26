@@ -1,0 +1,128 @@
+section{
+
+}
+section div{
+
+}
+section div form{
+  background-color: #f3f5f5;
+  margin-bottom: 60px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  font-size: 0;
+}
+section div form fieldset{
+
+}
+section div form fieldset legend{
+
+}
+section div form fieldset select{
+  background-color: white;
+  border: 1px solid #cccccc;
+  padding: 10px;
+}
+section div form fieldset #se1{
+  width: 22%;
+}
+section div form fieldset #se2{
+  width: 18%;
+  margin-left: calc(2% / 5);
+}
+section div form fieldset #se3{
+  width: 10%;
+  margin-left: calc(2% / 5);
+}
+section div form fieldset select option{
+
+}
+section div form fieldset input[type="text"]{
+  width: calc(100% - 2% / 5 * 6 - 61%);
+  border: 1px solid #cccccc;
+  padding: 10px;
+  margin-left: calc(2% / 5 * 2);
+}
+section div form fieldset input[type="submit"]{
+  width: 7%;
+  background-color: #00a0c6;
+  color: white;
+  font-weight: bold;
+  margin-left: calc(2% / 5);
+  border: none;
+}
+section div form fieldset input[type="reset"]{
+  margin-left: calc(2% / 5);
+  width: 4%;
+  border: none;
+  background-image: url(../img/refresh.svg);
+  background-position: center;
+  vertical-align: bottom;
+  background-color: #767676;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+section div ul{
+  flex-wrap: wrap;
+  border-top: 3px solid #00a0c6;
+  padding-top: 30px;
+}
+section div ul li{
+    
+}
+section div ul li a{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 30px;
+  margin-bottom: 30px;
+  row-gap: 18px;
+}
+section div ul li a:hover figure img{
+  opacity: 0.45;
+}
+section div ul li a:hover h3{
+  color: #111;
+}
+section div ul li a:hover p{
+  color: #333;
+}
+section div ul li a figure{
+  grid-row: 1 / span 3;
+}
+section div ul li a figure img{
+  height: 100%;
+  transition: all 0.3s;
+}
+section div ul li a h3{
+ 
+  font-size: 17px;
+  color: #626262;
+  transition: all 0.3s;
+}
+section div ul li a p{
+  
+  transition: all 0.3s;
+}
+section div ul li a p:nth-of-type(1){
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  line-height: 23px;
+}
+section div ul li a p .date{
+
+}
+section div ul li a p #line{
+  border-right: 1px solid #999;
+  border-left: 1px solid #999;
+  padding-left: 12.5px;
+  padding-right: 12.5px;
+}
+section div ul li a p span{
+  
+  font-size: 13px;
+  margin-right: 12.5px;
+  color: #999;
+  display: inline-block;
+}

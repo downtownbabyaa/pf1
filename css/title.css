@@ -1,0 +1,194 @@
+/* 타이틀 영역 */
+div#title{
+   height: 600px;
+   font-weight: 300;
+   position: relative;
+   top: 80px;
+   margin-bottom: 80px;
+   transition: all 0.5s;
+ }
+/*  div#title::before{
+   content: "";
+   display: block;
+   width: 0;
+   height: 0;
+   border: 240px solid rgba(255,0,0,0.2);
+   border-left-width: 390px;
+   border-right-width: 390px;
+   border-right-color: transparent;
+   border-bottom-color: transparent;
+   top: 0;
+   left: 0;
+   position: absolute;
+ }
+ div#title::after{
+   content: "";
+ } */
+#title .wlist{
+  height: 65%;
+}
+#title .wlist .slick-dots{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn_pause{
+  border: none;
+  font-size: 0;
+  background-color: transparent;
+  width: 33px;
+  height: 33px;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+}
+#title .wlist .slick-dots .bt2{
+  
+}
+#title .wlist .slick-dots li{
+  padding: 10px;
+}
+#title .wlist .slick-dots li button::before{
+  opacity: 1;
+  color: white;
+  border: none;
+  font-size: 13px;
+  transition: all 0.3s;
+}
+#title .wlist .slick-dots .slick-active button::before{
+  font-size: 7px;
+}
+
+#title .wlist .list{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  transition: all 0.5s;
+}
+.tt1{
+  background-image: url(../img/title.jpg);
+  background-position-y: 55%;
+}
+.tt2{
+  background-image: url(../img/title-2.png);
+}
+.tt3{
+  background-image: url(../img/title-3.png);
+}
+ div#title .wlist .list h2{
+   margin-bottom: 15px;
+   font-size: 30px;
+   animation-name: textup;
+   animation-duration: 2s;
+   animation-fill-mode: forwards;
+   margin-top: -130px;
+ }
+#title .slick-dots>.slick-active{
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.slick-dots>.slick-active li button::before{
+  
+}
+@keyframes textup{
+  0%{
+    transform: scale(1) translateY(20px);
+    opacity: 0;
+  }
+  50%{
+    transform: scale(1.2) translateY(calc(20px / 2));
+  }
+  100%{
+    transform: scale(1.1) translateY(0);
+    opacity: 1;
+  }
+}
+ div#title .wlist .list p{
+   text-align: center;
+   line-height: 1.25;
+   transition: all 0.5s;
+   animation-name: textup;
+   animation-duration: 2s;
+   animation-fill-mode: forwards;
+   animation-delay: 0.66s;
+   opacity: 0;
+ }
+ div#title h2 span{
+   font-weight: 500;
+ }
+ div#title h2::after{
+   content: "";
+   font-size: 10px;
+   width: 1px;
+   height: 75px;
+   display: block;
+   background-color: #666;
+   margin: 0 auto;
+   margin-top: 15px;
+ }
+ div#title a{
+   background-color: green;
+   color: white;
+   width: 100px;
+   height: 50px;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   top: 35px;
+   transition: all 0.5s;
+   animation-name: textup;
+   animation-duration: 2s;
+   animation-fill-mode: forwards;
+   animation-delay: 1.32s;
+   opacity: 0;
+   /* animation-iteration-count: infinite; */
+   /* animation-direction: alternate; */
+   margin: 0 auto;
+ }
+ div#title a:hover{
+   background-color: orange;
+ }
+ div#title a::before{
+   content: "";
+   width: 0;
+   height: 0;
+   display: block;
+   border: 50px solid green;
+   border-right-color: transparent;
+   border-bottom-color: green;
+   border-left-color: transparent;
+   position: absolute;
+   top: -30px;
+   left: 0;
+   border-bottom-width: 30px;
+   border-top: none; 
+   transition: all 0.5s;
+ }
+ div#title a:hover::before{
+   border-bottom: 30px solid orange;
+ }
+ div#title a:hover:after{
+   border-top: 30px solid orange;
+ }
+ div#title a::after{
+   content: "";
+   border: 50px solid green;
+   border-top-color: green;
+   border-bottom: none;
+   border-left-color: transparent;
+   border-right-color: transparent;
+   position: absolute;
+   width: 0;
+   top: 50px;
+   left: 0;
+   border-top-width: 30px;
+   transition: all 0.5s;
+ }

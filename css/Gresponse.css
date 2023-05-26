@@ -1,0 +1,241 @@
+/* 태블릿 버전 */
+@media screen and (max-width:1200px){
+  header{
+    width: 100%;
+    left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+  }
+  main{
+  height: auto;
+  }
+  .gnb{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  bottom: -45px;
+  }
+  .gnb li a{
+    border: none;
+  }
+  .gnb li a:hover{
+    border: none;
+  }
+  .etcmenu{
+  position: static;
+  }
+  div#title{
+    top: 50px;
+  }
+  div#title h2{
+    margin-top: 0;
+  }
+  main section{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  main section#intro div ul li{
+    height: 23.636363636363636vw;
+  }
+  main section#intro div ul li a::before{
+    height: 9.090909090909091vw;
+  }
+
+  /*   common  */
+  .breadcrumb{
+    top: -30px;
+  }
+  /*  메인 영역  */
+  #greeting{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  /* 타이틀 영역 */
+  #subtitle{
+    top: 50px;
+  }
+  #subtitle div.wrap button{
+    right: 15px;
+  }
+  
+  /*  하단 영역  */
+  
+  footer{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
+
+/* 모바일 버전 */
+@media screen and (max-width:760px){
+  header{
+    width: 100%;
+    height: 50px;
+    left: 0;
+    transition: all 0.5s;
+  }
+  main{
+    height: auto;
+  }
+  header h1{
+    margin: 0 auto;
+    transform: scale(0.75);
+  }
+  header h1 a {
+    background-image: url(../img/hj_logo-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 20px;
+  }
+  header nav>*:not(:last-child){
+    display: none;
+  }
+  .ham{
+    display: block;
+    transform: translateX(-10px);
+  }
+
+  /* common */
+
+  .padding30{
+    padding-top: calc(30px * 0.66);
+    padding-bottom: calc(30px * 0.66);
+  }
+  .wrap{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .h3{
+    font-size: calc(23px * 0.66);
+  }
+  .block{
+    display: initial;
+  }
+  .breadcrumb{
+    display: none;
+  }
+
+  /*  타이틀 영역  */
+  
+  #subtitle{
+  top: 50px;
+  }
+  #subtitle div.wrap{
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  #subtitle div.wrap button{
+    position: static;
+    margin-left: 30px;
+  }
+  #subtitle div.wrap button::before{
+    display: none;
+  }
+  #subtitle div.wrap button::after{
+     position: static;
+     transform: translateY(2px) rotate(45deg);
+     width: 5px;
+     height: 5px;
+    }
+ 
+
+  
+  /* 메인 영역 */
+  
+  main section#intro div ul{
+  flex-wrap: wrap;
+  row-gap: 10px;
+  }
+  main section#intro div ul li{
+  min-width: calc(100% / 2 - 10px / 2);
+  height: 46.71052631578977vw;
+ }
+  main section#intro div ul li a{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+ }
+  main section#intro div ul li a::before {
+  height: 50px;
+ }
+  main section#intro div ul li a p{
+    
+  }
+  #greeting section div{
+  padding-top: 0;
+  padding-bottom: 0;
+  }
+  #greeting section div strong:nth-child(1){
+    font-size: calc(200% * 0.54);
+  }
+  #greeting section div strong:nth-child(2){
+  font-size: calc(130% * 0.65);
+  }
+  #greeting section div strong:nth-child(2)::before {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #greeting section div p{
+    font-size: calc(100% * 0.65);
+    margin-bottom: 15px;
+    line-height: 1.3;
+  }
+  #greeting section div p:nth-child(3){
+    margin-top: 30px;
+  }
+  
+  
+  /*  하단 영역  */
+  
+  footer{
+    
+  }
+  footer div.wrap select{
+    margin-top: 10px;
+    padding-top: 3px;
+    width: 120px;  
+    font-size: 100%;
+/*     text-align: center; */
+  }
+  footer div.wrap{
+    font-size: 80%;
+    flex-direction: column;
+    padding: 0;
+    font-size: calc(100% * 0.77)
+  }
+  footer div.wrap ul{
+    display: flex;
+    column-gap: 15px;
+    margin-bottom: 10px;
+  }
+  footer div.wrap address{
+    width: auto;
+    margin-bottom: 10px;
+  }
+  footer div.wrap address span{
+    display: block;
+  }
+  footer div.wrap p{
+    font-size: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

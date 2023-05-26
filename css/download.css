@@ -1,0 +1,82 @@
+#hg li:nth-child(3)::before{
+  color: #06a2c7;
+}
+#life {
+  
+  padding: 0 30px;
+}
+#life .lifelist {
+  flex-wrap: wrap;
+  column-gap: 50px;
+  margin-bottom: 50px;
+}
+#life .lifelist li {
+  width: calc((100% - 200px) / 5);
+  text-align: center;
+  margin: 30px 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#life .lifelist li figure{
+  border: 1px solid #ccc;
+  border-top: 3.5px solid #06a2c7;
+  margin-bottom: 20px;
+  width: 100%;
+}
+#life .lifelist li figure span{
+  
+}
+#life .lifelist li figure figcaption {
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 0;
+  border-left: 1px solid #cccccc78;
+  margin-left: 10px;
+  padding-right: 10px;
+}
+#life .lifelist li figure img {
+  cursor: pointer;
+}
+#life .lifelist li figure .popupimg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#life .lifelist li figure .popupimg img{
+  width: 250px;
+  height: 350px;
+  cursor: initial;
+}
+#life .lifelist li figure .popupimg .close{
+  background-color: transparent;
+  font-size: 0;
+  position: absolute;
+  right: calc(50% - (250px / 2) - 38px);
+  top: calc(50% - (350px / 2) - 38px);
+}
+#life .lifelist li figure .popupimg .close img{
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+}
+#life .lifelist li a {
+  color: #06a2c7;
+  padding: 2.5px 25px;
+  background-image: url(../img/download.gif);
+  font-size: 0;
+  width: 100px;
+  height: 30px;
+  display: block;
+  background-repeat: no-repeat;
+}

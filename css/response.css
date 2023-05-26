@@ -1,0 +1,317 @@
+/* 태블릿 버전 */
+@media screen and (max-width:1200px){
+  header{
+    width: 100%;
+    left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+  }
+  main{
+  height: auto;
+  }
+  .gnb{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  bottom: -45px;
+  }
+  .gnb li h2 .tm{
+    border: none;
+  }
+  .gnb li h2 .tm:hover{
+    border: none;
+  }
+  .gnb > li:hover h2 .tm{
+    border-top: none;
+  }
+  .etcmenu{
+  position: static;
+  }
+  div#title{
+    top: 50px;
+  }
+  div#title h2{
+    margin-top: 0;
+  }
+  main section{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  main section#intro div ul li{
+    height: 23.636363636363636vw;
+  }
+  main section#intro div ul li a::before{
+    height: 9.090909090909091vw;
+  }
+  
+  /*  사회 공헌  */
+  #society div.wrap{
+    background-image: none;
+  }
+  
+  /*  한진 뉴스  */
+  
+  #news div.wrap ul{
+    
+  align-items: flex-start;
+  }
+  #news div.wrap ul li{
+    
+  width: 100%;
+  }
+  #news div.wrap ul:not(:first-child){
+  }
+  #news div.wrap ul li:first-child a.block{
+    margin-left: 50%;
+  }
+  #news div.wrap ul li:first-child p .block{
+    height: 74px;
+  }
+  #news div.wrap ul li:first-child a.block figure{
+  
+  }
+  #news div.wrap ul li:nth-child(n+2){
+    width: auto;
+  }
+  #news div.wrap ul li:first-child a.block figure img{
+    height: 50%;
+  }
+  #news div.wrap ul li:first-child p{
+    margin-bottom: calc(100px * 0.66)
+  }
+  #news div.wrap ul li:nth-child(n+2) a{
+  display: flex;
+  }
+  #news div.wrap ul li:nth-child(n+2) date{
+  
+  position: absolute;
+  right: 0;
+  }  
+  /*  하단 영역  */
+  
+  footer{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
+
+/* 모바일 버전 */
+@media screen and (max-width:760px){
+  header{
+    width: 100%;
+    height: 50px;
+    left: 0;
+    transition: all 0.5s;
+  }
+  main{
+    height: auto;
+  }
+  header h1{
+    margin: 0 auto;
+    transform: scale(0.75);
+  }
+  header h1 a {
+    background-image: url(../img/hj_logo-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 20px;
+  }
+  header nav>*:not(:last-child){
+    display: none;
+  }
+  .ham{
+    display: block;
+    transform: translateX(-10px);
+  }
+
+  /* common */
+
+  .padding30{
+    padding-top: calc(30px * 0.66);
+    padding-bottom: calc(30px * 0.66);
+  }
+  .wrap{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .h3{
+    font-size: calc(23px * 0.66);
+  }
+  .block{
+    display: initial;
+  }
+
+  /*  타이틀 영역  */
+
+  div#title{
+    top: 50px;
+    min-height: 440px;
+  }
+  div#title h2{
+    font-size: calc(50px * 0.55);
+    margin-top: -30px;
+  }
+  div#title h2::after{
+    height: 50px;
+  }
+  div#title p{
+    transform: scale(0.88);
+  }
+  div#title a{
+    transform: scale(0.77);
+    top: 0px;
+  }
+  
+  /* 메인 영역 */
+  
+  main section#intro div ul{
+  flex-wrap: wrap;
+  row-gap: 10px;
+  }
+  main section#intro div ul li{
+  min-width: calc(100% / 2 - 10px / 2);
+  height: 46.71052631578977vw;
+ }
+  main section#intro div ul li a{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+ }
+  main section#intro div ul li a::before {
+  height: 50px;
+ }
+  main section#intro div ul li a p{
+    
+  }
+  
+  /*  사회공헌  */
+  
+  #society{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #society div.wrap{
+    display: block;
+    background-image: none;
+  }
+  #society div.wrap h2.h3{
+  }
+  #society div.wrap article{
+  }
+  #society div.wrap>p.p{
+    position: static;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #society div.wrap article a{
+    border: none;
+  }
+  #society div.wrap article a:hover{
+    border: none;
+  }
+  
+  /*  한진 뉴스  */
+  
+  #news{
+    
+  }
+  #news div.wrap{
+   
+  }
+  #news div.wrap ul{
+    display: block;
+  }
+  #news div.wrap ul li:first-child{
+    width: auto;
+  }
+  #news div.wrap ul li:first-child a.block{
+    margin: 0 auto;
+  }
+  #news div.wrap ul li:first-child a.block figure{
+    margin-bottom: 25px;
+    position: initial;
+    width: auto;
+    height: 200px;
+  }
+  #news div.wrap ul li:first-child a.block figure img{
+    
+    height: 100%;
+  }
+  #news div.wrap ul li:first-child p{
+    
+    display: inline-block;
+    margin-bottom: 25px;
+  }
+  #news div.wrap ul li:first-child p .block{
+    height: 56px;
+    display: inline-block;
+  }
+  #news div.wrap ul li:nth-child(n+2){
+   width: auto;
+  }
+  #news div.wrap ul li:nth-child(n+2) a{
+  display: block;
+  }
+  #news div.wrap ul li:nth-child(n+2) date{
+    position: static;
+  }
+  
+  /*  하단 영역  */
+  
+  footer{
+  }
+  footer div.wrap select{
+ 
+  }
+  footer div.wrap{
+    font-size: 80%;
+  }
+/*  mSublist  */
+  #mSublist{
+
+  }
+  .mSublist{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    width: 155px;
+    height: auto;
+  }
+  .mSublist a{
+  }
+  .mSublist ul{
+  }
+  .mSublist ul li{
+    
+  }
+  .mSublist ul ul{
+  padding-bottom: 10px;
+  }
+  .mSublist ul ul li{
+    
+  }
+  .mSublist ul ul li a{
+    
+  }
+  .mSublist ul li a{
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

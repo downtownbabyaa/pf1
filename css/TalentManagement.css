@@ -1,0 +1,96 @@
+#TalentManagement{
+  
+}
+#TalentManagement section{
+  
+}
+#TalentManagement section #s0{
+  padding-bottom: 0;
+}
+#TalentManagement section #s0 p{
+  margin-bottom: 10px;
+  font-family: "Pretendard Std", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 1.3;
+}
+#TalentManagement section #s0 #p1{
+  margin-bottom: 20px;  
+  margin-top: 30px;
+}
+#TalentManagement section #s1{
+  display: flex;
+  height: 340px;
+}
+#TalentManagement section #s1 figure{
+  width: 50%;
+}
+#TalentManagement section #s1 figure img{
+  height: 100%;
+}
+#TalentManagement section #s2{
+  width: 50%;
+  padding: 55px;
+  border: 1px solid #ccc;
+  border-left-color: transparent;
+}
+#TalentManagement section #s2 h2{
+  margin-bottom: 20px;
+}
+#TalentManagement section #s2 p{
+  position: relative;
+}
+#TalentManagement section #s2 p::before{
+  content: "";
+  width: 2px;
+  height: 2px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  position: absolute;
+  left: -10px;
+  background-color: #ccc;
+  transform: translateY(7px) rotate(45deg);
+}
+#TalentManagement section #s3{
+
+}
+#TalentManagement section #s3 h1{
+  margin-bottom: 50px;
+}
+#TalentManagement section #s3 .line{
+  display: block;
+  background-color: black;
+  height: 1px;
+  width: 40%;
+  margin-bottom: 40px;
+}
+#TalentManagement section #s3 #s4{
+
+  margin-bottom: 20px;
+}
+#TalentManagement section #s3 #s4 h2{
+  width: 25%;
+  line-height: 1.1;
+}
+#TalentManagement section #s3 #s4 #s5{
+  width: 70%;
+  margin-left: 10%;
+}
+#TalentManagement section #s3 #s4 #s5 p{
+  margin-bottom: 30px;
+}
+#TalentManagement section #s6{
+  margin-bottom: 20px;
+}
+#TalentManagement section #s6 h2{
+  
+  width: 25%;
+  line-height: 1.1;
+}
+#TalentManagement section #s6 #s7{
+  width: 70%;
+  margin-left: 10%;
+}
+#TalentManagement section #s6 #s7 p{
+
+}
+
+

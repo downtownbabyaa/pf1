@@ -1,0 +1,141 @@
+#president {
+  
+}
+#president section {
+  
+}
+#president section .wrap {
+  
+}
+#hg li:nth-child(1)::before{
+  color: #06a2c7;
+}
+#president section .wrap .wwgallery{
+  justify-content: space-between;
+  gap: 40px;
+}
+#president section .wrap .wgallery{
+  width: 60%;
+  display: flex;
+  gap: 10px;
+}
+#president section .wrap .wgallery figure{
+  width: calc(100% * 4 / 5);
+  display: flex;
+}
+#president section .wrap .wgallery figure img{
+  
+}
+#president section .wrap .wwgallery .wgallery .gallery{
+  width: calc(100% * 1 / 5);
+}
+#president section .wrap .wwgallery .wgallery .popupimg img{
+  width: auto;
+}
+#president section .wrap .wwgallery .wgallery .popupimg .close{
+  position: absolute;
+  top: calc(50% - 200px);
+  left: calc(50% + 210px);
+  font-size: 0;
+  border: none;
+  background-color: transparent;
+}
+#president section .wrap .wwgallery .wgallery .popupimg .close img{
+  
+  cursor: pointer;
+}
+#president section .wrap .wwgallery .wgallery .gallery li {
+  
+}
+#president section .wrap .wwgallery .wgallery .gallery li:not(:last-child){
+  margin-bottom: 6px;
+}
+#president section .wrap .wwgallery .wgallery .gallery li a {
+  font-size: 0;
+}
+#president section .wrap .wwgallery .wgallery .gallery li a img {
+}
+#president section .wrap .wwgallery .wtext{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  line-height: 2;
+}
+#president section .wrap .wwgallery .wtext h2{
+  
+}
+#president section .wrap .wwgallery .wtext p{
+  
+}
+#president section .wrap .career {
+  width: fit-content;
+  margin: 60px 0 30px;
+}
+#president section .wrap .career li {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  height: 40px;
+}
+#president section .wrap .career li a {  
+  width: 150px;
+}
+#president section .wrap .year {
+  
+}
+#president section .wrap .year li {
+  
+}
+#president section .wrap .year li h3 {
+  
+}
+#president section .wrap .year li ol{
+  
+}
+#president section .wrap .year li:nth-child(2) ol {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#president section .wrap .year li:nth-child(2) ol li{
+  width: 45%;
+}
+#president section .wrap .year li ol li {
+  line-height: 3;
+  display: flex;
+  align-items: center;
+  color: #777;
+}
+#president section .wrap .year li ol li:not(:last-child){
+  border-bottom: 1px solid #cccccc78;
+}
+#president section .wrap .year li ol li .year {
+  font-size: 110%;
+  margin-right: 50px;
+  color: #555;
+}
+#president section .wrap .year li ol li .month{
+  margin-right: 25px;
+}
+
+.popupimg{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.popup{
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: box-shadow 1s;
+		}

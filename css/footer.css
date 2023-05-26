@@ -1,0 +1,52 @@
+/* 하단 영역 */
+footer{
+  background-color: #e1e1e1;
+}
+footer div.wrap {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  line-height: 24px;
+  font-size: 90%;
+}
+footer div.wrap ul {
+  
+}
+footer div.wrap ul li {
+  
+}
+footer div.wrap ul li a {
+  
+  color: #3e3e3e;
+}
+footer div.wrap address {
+  width: 45%;
+}
+footer div.wrap select {
+  
+  height: 1%;
+  width: 20%;
+  border: none;
+  background-color: transparent;
+  border-top: 1px solid #888;
+  padding-top: 8px;
+}
+footer div.wrap select option {
+  
+}
+footer div.wrap p {
+  
+  width: 100%;
+  border-top: 1px solid #888;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+.top{
+  position: fixed;
+  right: -28px;
+  top: 35%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.topshow{
+  right: 20px;
+}

@@ -1,0 +1,343 @@
+/* 태블릿 버전 */
+@media screen and (max-width:1200px){
+    header{
+      width: 100%;
+      left: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+      height: 50px;
+    }
+    main{
+    height: auto;
+    }
+    .gnb{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    bottom: -45px;
+    }
+    .gnb li a{
+      border: none;
+    }
+    .gnb li a:hover{
+      border: none;
+    }
+    .etcmenu{
+    position: static;
+    }
+    div#title{
+      top: 50px;
+    }
+    div#title h2{
+      margin-top: 0;
+    }
+    main section{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    main section#intro div ul li{
+      height: 23.636363636363636vw;
+    }
+    main section#intro div ul li a::before{
+      height: 9.090909090909091vw;
+    }
+  
+    /*   common  */
+  
+    .wrap{
+      max-width: 1200px;
+    }
+    .breadcrumb{
+      top: -30px;
+      font-size: calc(100% * 0.88);
+    }
+    .h22{
+      font-size: calc(33px * 0.77)
+    }
+    .p{
+      font-size: calc(14px * 0.8)
+    }
+    .h1{
+      font-size: calc(50px * 0.77)
+    }
+    .h3{
+      font-size: calc(23px * 0.77)
+    }
+    /*  메인 영역  */
+    #TalentManagement section{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    #TalentManagement section #s0{
+      padding-top: 20px;
+    }
+    #TalentManagement section #s1{
+      margin-bottom: 10px;
+      height: 240px;
+    }
+    #TalentManagement section #s1 figure{
+      width: 50%;
+    }
+    #TalentManagement section #s2{
+      padding: 26px;
+    }
+    #TalentManagement section #s2 h2{
+      margin-bottom: 10px;
+      font-size: calc(23px * 0.66);
+    }
+    #TalentManagement section #s2 p{
+
+    }
+    #TalentManagement section #s0 p{
+      line-height: 1.2;
+    }
+    #TalentManagement section #s3 {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+    #TalentManagement section #s3 #s4 #s5{
+      margin-left: 10%;
+    }
+    /* 타이틀 영역 */
+    #subtitle{
+      top: 50px;
+    }
+     #subtitle div.wrap #bu1{
+      margin-right: 20px;
+      padding-left: 40px;
+    }
+    #subtitle div.wrap #bu1::before{
+      scale: 0.77;
+      top: calc(100% - 31px);
+    }
+      #subtitle div.wrap #bu1::after{
+      scale: 0.77;
+      transform: translateY(0px) rotate(45deg);
+    }
+     #subtitle div.wrap #bu2::before{
+      scale: 0.77;
+      top: calc(100% - 31px);
+    }
+      #subtitle div.wrap #bu2::after{
+      scale: 0.77;
+      transform: translateY(0px) rotate(45deg);
+    }
+    #subtitle div.wrap #bu2{
+        margin-left: 20px;
+        padding-right: 40px;
+    }
+    
+    /*  하단 영역  */
+    
+    footer{
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: calc(100% * 0.9);
+    }
+  }
+  
+  
+  
+  /* 모바일 버전 */
+  @media screen and (max-width:760px){
+    header{
+      width: 100%;
+      height: 50px;
+      left: 0;
+      transition: all 0.5s;
+    }
+    main{
+      height: auto;
+    }
+    header h1{
+      margin: 0 auto;
+      transform: scale(0.75);
+    }
+    header h1 a {
+      background-image: url(../img/hj_logo-bg.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin-left: 20px;
+    }
+    header nav>*:not(:last-child){
+      display: none;
+    }
+    .ham{
+      display: block;
+      transform: translateX(-10px);
+    }
+  
+    /* common */
+    
+    .h1{
+      font-size: calc(50px * 0.77);
+    }
+    .h5{
+      font-size: calc(19px * 0.77);
+    }
+    .h22{
+      font-size: calc(33px * 0.66)
+    }
+    .p{
+      font-size: calc(14px * 0.77)
+    }
+    .padding30{
+      padding-top: calc(30px * 0.66);
+      padding-bottom: calc(30px * 0.66);
+    }
+    .wrap{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .h3{
+      font-size: calc(23px * 0.66);
+    }
+    .block{
+      display: initial;
+    }
+    .breadcrumb{
+      display: none;
+    }
+    /*  메인 영역  */
+    #TalentManagement{
+      width: 100%;
+    }
+    #TalentManagement section #s0{
+      padding: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    #TalentManagement section #s1{
+      display: block;
+      height: auto;
+    }
+    #TalentManagement section #s1 figure{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    #TalentManagement section #s2{
+      width: 100%;
+      padding: 0;
+      padding-left: 10px;
+      border: none;
+    }
+    #TalentManagement section #s1 figure img{
+      height: 200px;
+    }
+    #TalentManagement section #s3{
+      padding: 0;
+    }
+    #TalentManagement section #s3 h1{
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+    #TalentManagement section #s2 h2{
+      margin-bottom: 10px;
+    }
+    /*  타이틀 영역  */
+    #subtitle div.wrap #bu1{
+      /*! right: -45px; */
+      margin-right: 0;
+      padding-left: 100px;
+    }
+    #subtitle div.wrap #bu2{
+      left: -40px;
+    }
+    #subtitle div.wrap #bu1::before{
+      display: none;
+    }
+    #subtitle div.wrap #bu1::after{
+      position: static;
+      transform: translateY(2px) rotate(45deg);
+      width: 5px;
+      height: 5px;
+    }
+   #subtitle div.wrap #bu2::after {
+      content: "";
+      border: 3px solid #fff;
+      width: 35px;
+      height: 35px;
+      display: block;
+      position: absolute;
+      left: -3px;
+      top: calc((100% - 30px) / 2);
+      top: calc(100% - 32px);
+      border-radius: 50%;
+      }
+    #subtitle div.wrap #bu2::after{
+      display: none;
+    }
+    #subtitle div.wrap #bu2::before {
+      content: "";
+      border: 3px solid #fff;
+      border-right-color: transparent;
+      border-top-color: transparent;
+      width: 5px;
+      height: 5px;
+      display: flex;
+      transform: translateY(2px) rotate(45deg);
+      margin-left: 13.5;
+      position: static;
+      left: 0px;
+      border-radius: 0;
+      }
+      #TalentManagement section #s3 #s4 h2{
+      width: 21%
+      }
+      #TalentManagement section #s3 #s4 #s5{
+        margin-left: 
+      18%; 
+      }
+      #TalentManagement section #s6 h2{
+        width: 30%;
+      }
+    /*  하단 영역  */
+    
+    footer{
+      margin-top: 50px;
+    }
+    footer div.wrap select{
+      margin-top: 10px;
+      padding-top: 3px;
+      width: 120px;  
+      font-size: 100%;
+  /*     text-align: center; */
+    }
+    footer div.wrap{
+      font-size: 80%;
+      flex-direction: column;
+      padding: 0;
+      font-size: calc(100% * 0.77)
+    }
+    footer div.wrap ul{
+      display: flex;
+      column-gap: 15px;
+      margin-bottom: 10px;
+    }
+    footer div.wrap address{
+      width: auto;
+      margin-bottom: 10px;
+    }
+    footer div.wrap address span{
+      display: block;
+    }
+    footer div.wrap p{
+      font-size: 100%;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
